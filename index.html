@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+           margin: auto  ;
+           margin-top: 200px;
+           border: 5px double blueviolet;
+           width: fit-content;
+           border-radius: 5px;
+           box-shadow: 0 0 5px blueviolet;
+           padding: 10px;
+           font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para"></p>
+
+    <script>
+        let a= [1,2,3,4,5];             // Defining a array
+        let sum=0                       // Defining a variable to store the sum of elements in array initializing it  with 0 so that it don't affect the sum
+        for(let i=0;i<a.length;i++){        // for loop to iterate array 
+            sum+=a[i]                       // adding each element to sum
+        }
+
+       let output=document.getElementById("para");
+       output.innerText=`Sum of elements in Array [${a}] is ${sum}`;         // showing final result on the webpage
+    </script>
+</body>
+</html>
